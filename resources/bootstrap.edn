@@ -1,0 +1,41 @@
+[{:db/id      #db/id[:db.part/user]
+  :list/id    "1"
+  :list/type  :checked
+  :list/items [{:db/id        #db/id[:db.part/user]
+                :item/id      #uuid"5800eea7-9720-4cea-aad4-ecfb1398310f"
+                :item/content "Content 1"
+                :item/checked true}
+
+               {:db/id        #db/id[:db.part/user]
+                :item/id      #uuid"5800ef1d-f408-46cb-a710-0659852b01bc"
+                :item/content "Content 2"
+                :item/checked false}
+
+               {:db/id        #db/id[:db.part/user]
+                :item/id      #uuid"5800eea8-24bc-4777-87f6-9306a5ae981f"
+                :item/content "Content 3"
+                :item/checked false}
+
+               {:db/id        #db/id[:db.part/user]
+                :item/id      #uuid"5800eea8-0da1-4ea0-aca9-2cd4adaa8f6a"
+                :item/content "Content 4"
+                :item/checked true}]}
+
+ {:db/id      #db/id[:db.part/user]
+  :list/id    "2"
+  :list/type  :numbered
+  :list/items [{:db/id        #db/id[:db.part/user]
+                :item/id      #uuid "5800ef5e-a5bc-4881-adde-be7112b9860a"
+                :item/content "Lol 1"}
+
+               {:db/id        #db/id[:db.part/user]
+                :item/id      #uuid "5800ef5e-bed2-4681-a006-c87339971020"
+                :item/content "Lol 2"}
+
+               {:db/id        #db/id[:db.part/user]
+                :item/id      #uuid "5800ef5e-23f2-4285-ae0c-c72a8fe2d40a"
+                :item/content "Lol 3"}
+
+               {:db/id        #db/id[:db.part/user]
+                :item/id      #uuid "5800ef5e-5dcb-4f85-b9c4-9081eb6d0050"
+                :item/content "Lol 4"}]}]

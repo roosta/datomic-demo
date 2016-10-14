@@ -1,0 +1,42 @@
+[
+ {:db/id                 #db/id[:db.part/db]
+  :db/ident              :list/id
+  :db/valueType          :db.type/string
+  :db/cardinality        :db.cardinality/one
+  :db/unique             :db.unique/identity
+  :db.install/_attribute :db.part/db}
+
+ {:db/id                 #db/id[:db.part/db]
+  :db/ident              :list/type
+  :db/valueType          :db.type/keyword                 ;; numberd, checked, bullet
+  :db/cardinality        :db.cardinality/one
+  :db.install/_attribute :db.part/db}
+
+ {:db/id                 #db/id[:db.part/db]
+  :db/ident              :list/items
+  :db/valueType          :db.type/ref
+  :db/cardinality        :db.cardinality/many
+  :db/isComponent        true
+  :db.install/_attribute :db.part/db}
+
+ ;; ITEMS
+
+ {:db/id                 #db/id[:db.part/db]
+  :db/ident              :item/id
+  :db/valueType          :db.type/uuid
+  :db/cardinality        :db.cardinality/one
+  :db/unique             :db.unique/identity
+  :db.install/_attribute :db.part/db}
+
+ {:db/id                 #db/id[:db.part/db]
+  :db/ident              :item/content
+  :db/valueType          :db.type/string
+  :db/cardinality        :db.cardinality/one
+  :db.install/_attribute :db.part/db}
+
+ {:db/id                 #db/id[:db.part/db]
+  :db/ident              :item/checked
+  :db/valueType          :db.type/boolean
+  :db/cardinality        :db.cardinality/one
+  :db.install/_attribute :db.part/db}
+ ]
