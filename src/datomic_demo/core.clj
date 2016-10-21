@@ -96,6 +96,11 @@
 
 (d/pull db-1 '[*] 17592186045422)
 
+;; examples of transacting on a db entity.
+; [:db/add [:user/username "daniel"] :attr val]
+; [15:08]  
+; (d/entid db  [:user/username "daniel"])
+
 @(d/transact CONN [[:db/add 17592186045422 :item/content "Content 4 Version 4"]])
 
 (d/t->tx (d/basis-t db-1))
