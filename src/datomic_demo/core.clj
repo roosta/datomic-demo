@@ -98,7 +98,6 @@
 
 ;; examples of transacting on a db entity.
 ; [:db/add [:user/username "daniel"] :attr val]
-; [15:08]  
 ; (d/entid db  [:user/username "daniel"])
 
 @(d/transact CONN [[:db/add 17592186045422 :item/content "Content 4 Version 4"]])
@@ -109,7 +108,7 @@
 
 (d/pull db-2 '[*] 17592186045422)
 
-(comment)(find-all-items (d/as-of (d/db CONN) "transact id eller timestamp"))
+(find-all-items (d/as-of (d/db CONN) "transact id eller timestamp"))
 
 (comment
  @(d/transact conn schema)
